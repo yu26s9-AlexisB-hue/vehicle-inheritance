@@ -4,27 +4,16 @@ public class Main {
     public static void main(){
 
         //creating the moped
-        Moped m = new Moped();
-
-        m.setColor("Gray and White");
-        m.setFuelCapacity(3);
-        m.setCargoCapacity(2);
-        m.setNumberOfPassengers(1);
+        Moped m = new Moped("Gray and White",3,2,1,2.3,true,2.5);
 
         //Creating the car
-        Car Lexus = new Car();
+        Car Lexus = new Car("Blue",6,25,4, 4, false,true);
 
-        Lexus.setColor("Blue");
-        Lexus.setCargoCapacity(6);
-        Lexus.setFuelCapacity(25);
-        Lexus.setNumberOfPassengers(4);
+        //semi truck
+        SemiTruck s = new SemiTruck("Red and Black",30,50,5,3000,6,true);
 
-        SemiTruck s = new SemiTruck();
-
-        
-
-
-
+        //Hovercraft
+        Hovercraft h = new Hovercraft("Pink",7,6,4,13,"water",true);
 
     }
 }
